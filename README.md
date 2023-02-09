@@ -1,6 +1,6 @@
 ## MySQL assignment
 
-Here is the [link]() for queries asked at [document](https://docs.google.com/document/d/10trI8qRuJUIXxqAI2zpZEJ35JUAVd655BA8IsetaCzI/edit#heading=h.c4uy1yovgq20)
+Here is the [link](https://github.com/developerJai/ruby-assignments/blob/main/sql/queries.md) for queries asked at [document](https://docs.google.com/document/d/10trI8qRuJUIXxqAI2zpZEJ35JUAVd655BA8IsetaCzI/edit#heading=h.c4uy1yovgq20)
 
 
 ## Steps for reviewing the Ruby Assignments
