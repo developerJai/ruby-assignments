@@ -27,9 +27,9 @@ class Parser
         if ele_content.include?(", Supreme Court No.")
           content[:petitioner] = ele_content.split(",").first
 
-        elsif ele_content.include?("1. Petitioner") or ele_content.include?("shall pay to")
+        elsif ele_content.include?("$")
           data_elements = ele_content.split(" $")
-          content[:amount] = "$" + data_elements.last.to_s.split(", ").first.to_s.split(". ").first
+          content[:amount] = "$" + data_elements.last.to_s.split(", ").first.to_s.split(". ").first.gsub("$","")
           # content[:state] = data_elements.first.split("shall pay to ").last
 
         elsif ele_content.include?("Supreme Court of the")
