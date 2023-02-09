@@ -1,8 +1,7 @@
 class Nasa
   require 'httparty'
   require 'nokogiri'
-  require 'sanitize'
-
+  
   def initialize
     @page_link = 'https://www.nasa.gov/press-release/nasa-industry-to-collaborate-on-space-communications-by-2025'
     @api_base = 'https://www.nasa.gov/api/2'

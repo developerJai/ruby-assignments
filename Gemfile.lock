@@ -2,7 +2,6 @@ GEM
   remote: https://rubygems.org/
   specs:
     Ascii85 (1.0.3)
-    crass (1.0.6)
     html_writer (0.2.0)
     httparty (0.21.0)
       mini_mime (>= 1.0.0)
@@ -20,9 +19,6 @@ GEM
     racc (1.6.2)
     rake (13.0.6)
     ruby-rc4 (0.1.5)
-    sanitize (6.0.1)
-      crass (~> 1.0.2)
-      nokogiri (>= 1.12.0)
 
 PLATFORMS
   x86_64-darwin-21
@@ -32,7 +28,6 @@ DEPENDENCIES
   nokogiri
   pdf-reader-html
   rake
-  sanitize
 
 BUNDLED WITH
    2.3.26
