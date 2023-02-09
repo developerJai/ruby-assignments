@@ -30,20 +30,16 @@ class Nasa
 
     return "No data in source" if data.nil?
 
+    body_html =  Nokogiri::HTML(data["body"])
+
+    body_data = body_html.search("p").map { |ele| ele.text }.reject { |e| e.to_s.empty? or e.to_s=="-end-" }
+
     result = {
       title: data["title"],
       date: data["promo-date-time"],
       release_no: data["release-id"],
-      article: data_cleaning(data["body"])
+      article: body_data.join(" ")
     }
-  end
-
-  private
-
-  def data_cleaning data
-    data = Sanitize.fragment(data.delete!("\n"))
-    ["&nbsp;", "  ", "1-tdrs_image.jpg"].map { |ele| data.gsub!(ele, "") }
-    return data.strip
   end
 end
 
